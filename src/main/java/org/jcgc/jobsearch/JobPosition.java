@@ -121,4 +121,20 @@ public class JobPosition {
     public int hashCode() {
         return Objects.hash(id, type, url, createdAt, company, companyUrl, title, location, description, companyLogo);
     }
+
+    @Override
+    public String toString() {
+        return "JobPosition{" +
+                "id='" + id + '\'' +
+                ", type='" + type + '\'' +
+                ", url='" + url + '\'' +
+                ", createdAt='" + createdAt + '\'' +
+                ", company='" + company + '\'' +
+                ", companyUrl='" + companyUrl + '\'' +
+                ", title='" + title + '\'' +
+                ", location='" + location + '\'' +
+                ", description='" + description + '\'' +
+                ", companyLogo='" + companyLogo + '\'' +
+                '}';
+    }
 }
