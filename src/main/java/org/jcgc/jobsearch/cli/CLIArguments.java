@@ -21,8 +21,16 @@ public class CLIArguments {
     )
     private String location;
 
+    @Parameter(
+            names = {"--page", "-p"},
+            description = "La API devuelve 50 resultados, usa un numero para pagina"
+    )
     private int page = 0;
 
+    @Parameter(
+            names = {"--full-time"},
+            description = "Agrega si queremos trabajos de tiempo completo"
+    )
     private boolean isFullTime = false;
 
     private boolean isMarkdown = false;
