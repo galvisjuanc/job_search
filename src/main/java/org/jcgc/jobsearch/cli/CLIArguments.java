@@ -41,4 +41,16 @@ public class CLIArguments {
     public boolean isHelp() {
         return isHelp;
     }
+
+    @Override
+    public String toString() {
+        return "CLIArguments{" +
+                "keyword='" + keyword + '\'' +
+                ", location='" + location + '\'' +
+                ", page=" + page +
+                ", isFullTime=" + isFullTime +
+                ", isMarkdown=" + isMarkdown +
+                ", isHelp=" + isHelp +
+                '}';
+    }
 }
