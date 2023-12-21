@@ -17,4 +17,28 @@ public class CLIArguments {
     private boolean isMarkdown = false;
 
     private boolean isHelp;
+
+    public String getKeyword() {
+        return keyword;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public int getPage() {
+        return page;
+    }
+
+    public boolean isFullTime() {
+        return isFullTime;
+    }
+
+    public boolean isMarkdown() {
+        return isMarkdown;
+    }
+
+    public boolean isHelp() {
+        return isHelp;
+    }
 }
