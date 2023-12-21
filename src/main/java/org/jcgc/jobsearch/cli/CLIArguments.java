@@ -15,6 +15,10 @@ public class CLIArguments {
     )
     private String keyword;
 
+    @Parameter(
+            names = {"--location", "-l"},
+            description = "Cada busqueda puede incluir una ubicacion"
+    )
     private String location;
 
     private int page = 0;
