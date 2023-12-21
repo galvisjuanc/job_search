@@ -53,4 +53,8 @@ public class CLIArguments {
                 ", isHelp=" + isHelp +
                 '}';
     }
+
+    public static CLIArguments newInstance() {
+        return new CLIArguments();
+    }
 }
