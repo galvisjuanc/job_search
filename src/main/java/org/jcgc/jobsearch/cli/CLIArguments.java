@@ -34,7 +34,7 @@ public class CLIArguments {
     private boolean isFullTime = false;
 
     @Parameter(
-            names = {"--markdown"},
+            names = "--markdown",
             description = "Obtener los resultados en markdown"
     )
     private boolean isMarkdown = false;
