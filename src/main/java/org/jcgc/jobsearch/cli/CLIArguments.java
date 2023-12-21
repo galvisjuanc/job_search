@@ -1,11 +1,18 @@
 package org.jcgc.jobsearch.cli;
 
+import com.beust.jcommander.Parameter;
+
 public class CLIArguments {
 
     CLIArguments() {
 
     }
 
+    @Parameter(
+            required = true,
+            descriptionKey = "KEYWORD",
+            description = "KEYWORD"
+    )
     private String keyword;
 
     private String location;
