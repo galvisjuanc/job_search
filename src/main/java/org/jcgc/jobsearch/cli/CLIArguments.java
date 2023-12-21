@@ -33,8 +33,17 @@ public class CLIArguments {
     )
     private boolean isFullTime = false;
 
+    @Parameter(
+            names = {"--markdown"},
+            description = "Obtener los resultados en markdown"
+    )
     private boolean isMarkdown = false;
 
+    @Parameter(
+            names = "--help",
+            help = true,
+            description = "Mostrar esta ayuda"
+    )
     private boolean isHelp;
 
     public String getKeyword() {
