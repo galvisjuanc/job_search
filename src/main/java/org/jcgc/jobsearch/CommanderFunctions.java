@@ -1,6 +1,7 @@
 package org.jcgc.jobsearch;
 
 import com.beust.jcommander.JCommander;
+import com.beust.jcommander.ParameterException;
 
 import javax.swing.text.html.Option;
 import java.util.List;
@@ -23,6 +24,13 @@ public class CommanderFunctions {
             String[] arguments,
             Consumer<JCommander> onError
     ) {
+        try{
+            jCommander.parse(arguments);
+            return Optional.of(jCommander.getObjects());
+        } catch (ParameterException parameterException) {
+            onError.accept(jCommander);
+        }
 
+        return Optional.empty();
     }
 }
