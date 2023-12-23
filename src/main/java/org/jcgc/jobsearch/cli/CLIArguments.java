@@ -42,6 +42,7 @@ public class CLIArguments {
     @Parameter(
             names = "--help",
             help = true,
+            validateWith = CLIHelpValidator.class,
             description = "Mostrar esta ayuda"
     )
     private boolean isHelp;
