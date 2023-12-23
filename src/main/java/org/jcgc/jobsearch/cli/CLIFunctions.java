@@ -12,8 +12,10 @@ public class CLIFunctions {
         params.put("full_time", cliArguments.isFullTime());
         params.put("page", cliArguments.getPage());
 
-        if(cliArguments.isMarkdown()) {
+        if (cliArguments.isMarkdown()) {
             params.put("markdown", true);
         }
+
+        return params;
     }
 }
