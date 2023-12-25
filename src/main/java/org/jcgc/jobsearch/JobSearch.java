@@ -18,7 +18,7 @@ import static org.jcgc.jobsearch.api.APIFunctions.buildAPI;
 
 public class JobSearch {
     public static void main(String[] args) {
-        System.out.println("Hello job search app -- Job Search --");
+        System.out.println("Hello job search application -- Job Search --");
         JCommander jCommander = buildCommanderWithName("job-search", CLIArguments::newInstance);
 
         Stream<CLIArguments> streamOfCLI =
